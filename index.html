@@ -6,191 +6,36 @@
 <title>SUBRAMANIYASUBASH R | Portfolio</title>
 
 <style>
+:root{
+    --primary:#0ea5e9;
+    --dark:#1f2933;
+    --light:#f4f6f9;
+}
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: Arial, sans-serif;
+    font-family: "Segoe UI", sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
-    background:#f4f6f9;
+    background:var(--light);
     color:#333;
 }
 
-header{
-    background: linear-gradient(135deg,#1f2933,#0ea5e9);
-    color:#fff;
-    text-align:center;
-    padding:50px 20px;
-}
-
-header h1{
-    font-size:2.2rem;
-}
-
-header p{
-    margin-top:8px;
-    font-size:1.1rem;
-}
-
-section{
-    max-width:1000px;
-    margin:auto;
-    padding:40px 20px;
-}
-
-h2{
-    color:#1f2933;
-    margin-bottom:20px;
-    border-left:5px solid #0ea5e9;
-    padding-left:10px;
-}
-
-.about p{
-    line-height:1.6;
-}
-
-.skills{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
-    gap:12px;
-}
-
-.skills span{
-    background:#1f2933;
-    color:white;
-    padding:10px;
-    text-align:center;
-    border-radius:6px;
-}
-
-.edu-box{
+/* NAVBAR */
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
     background:white;
-    padding:20px;
-    border-radius:10px;
-    margin-bottom:15px;
-    box-shadow:0 4px 8px rgba(0,0,0,0.08);
-}
-
-ul{
-    padding-left:20px;
-}
-
-li{
-    margin-bottom:8px;
-}
-
-.contact p{
-    margin:8px 0;
-}
-
-footer{
-    background:#1f2933;
-    color:white;
-    text-align:center;
-    padding:15px;
-    margin-top:30px;
-}
-
-@media(max-width:600px){
-    header h1{
-        font-size:1.8rem;
-    }
-}
-</style>
-</head>
-
-<body>
-
-<header>
-    <h1>SUBRAMANIYASUBASH R</h1>
-    <p>BSc Computer Science Student</p>
-</header>
-
-<section class="about">
-    <h2>About Me</h2>
-    <p>
-        I am SUBRAMANIYASUBASH R, a dedicated and enthusiastic 3rd-year undergraduate
-        Computer Science student with a strong foundation in programming, database
-        management, and web development. Eager to apply theoretical knowledge in a
-        practical environment and grow in the technology industry.
-    </p>
-</section>
-
-<section>
-    <h2>Technical Skills</h2>
-    <div class="skills">
-        <span>Python (Basic)</span>
-        <span>C (Basic)</span>
-        <span>C++ (Basic)</span>
-        <span>Java (Basic)</span>
-        <span>HTML (Basic)</span>
-        <span>SQL (Basic)</span>
-        <span>Git (Basic)</span>
-        <span>VS Code (Basic)</span>
-        <span>MS Office (Basic)</span>
-        <span>Excel (Basic)</span>
-        <span>Windows (Basic)</span>
-        <span>Linux – Ubuntu (Basic)</span>
-    </div>
-</section>
-
-<section>
-    <h2>Education</h2>
-
-    <div class="edu-box">
-        <b>BSc Computer Science</b><br>
-        NGM College, Pollachi, Tamil Nadu<br>
-        2023 – 2026
-    </div>
-
-    <div class="edu-box">
-        <b>Higher Secondary (12th)</b><br>
-        Blue Bird Matriculation Higher Secondary School, Palladam<br>
-        State Board | 2023 | <b>85.3%</b>
-    </div>
-
-    <div class="edu-box">
-        <b>Secondary (10th)</b><br>
-        SLNM School, Karadivavi, Palladam<br>
-        State Board | 2021 | <b>100%</b>
-    </div>
-</section>
-
-<section>
-    <h2>Certifications & Workshops</h2>
-    <ul>
-        <li>NPTEL – Programming in Java (Jul–Oct 2024)</li>
-        <li>HTML Training – Spoken Tutorial Project (Oct 2024)</li>
-        <li>Python Training – Spoken Tutorial Project (Mar 2025)</li>
-        <li>SQL & Relational Databases – IBM Cognitive Class (Mar 2025)</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Experience</h2>
-    <p>Fresher</p>
-</section>
-
-<section>
-    <h2>Languages Known</h2>
-    <ul>
-        <li>English</li>
-        <li>Tamil (Native)</li>
-    </ul>
-</section>
-
-<section class="contact">
-    <h2>Contact</h2>
-    <p><b>Address:</b> 2/990A, South 4th Street, Mahalakshmi Nagar, Naranapuram, Palladam, Tiruppur</p>
-    <p><b>Phone:</b> +91 6382764968</p>
-    <p><b>Email:</b> subashramachandran145@gmail.com</p>
-</section>
-
-<footer>
-    <p>© 2026 SUBRAMANIYASUBASH R | Portfolio</p>
-</footer>
-
-</body>
-</html>
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+    box-shad
